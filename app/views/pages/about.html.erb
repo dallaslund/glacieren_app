@@ -1,5 +1,9 @@
 <div class="container">
     
+    <% flash.each do |key, value| %>
+        <%= content_tag :div, value, class: "alert alert-#{key}" %>
+    <% end %>
+    
     <h2>About Us</h2>
     
 </div>
